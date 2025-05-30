@@ -1,0 +1,102 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ec4899, #ba11ba, #facc15);
+    padding: 1rem;
+}
+
+.login-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* This centers vertically */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* This centers horizontally */
+    gap: 1rem;
+    width: 100%;
+}
+
+.input-container {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    width: 70%;
+    /* 70% smaller width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+    width: 100%;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 70%;
+    /* Match the 70% width of inputs */
+    padding: 0.75rem;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Keep all other existing styles the same */
+/* Add these to your existing CSS */
+
+.password-input-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #8e8e8e;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.password-toggle:hover {
+    color: #262626;
+}
+
+.password-toggle:focus {
+    outline: none;
+}
+
+/* Make sure your input has enough padding on the right for the icon */
+.login-input {
+    padding-right: 35px !important; /* Space for the eye icon */
+}
