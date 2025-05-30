@@ -13,7 +13,7 @@ function LoginUser() {
     return (
         <div className="login-container">
             <div className="login-box">
-                <h3 className="login-title">Login to Your Account</h3>
+                <h1 className="login-title">Login to Your Account</h1>
                 <form onSubmit={handleSubmit} className="login-form">
                     <div className="input-container">
                         <div className="form-group">

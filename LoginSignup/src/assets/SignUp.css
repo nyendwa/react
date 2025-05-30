@@ -1,4 +1,4 @@
-.login-container {
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,66 +6,48 @@
     background: linear-gradient(to right, #ec4899, #ba11ba, #facc15);
     padding: 1rem;
 }
-.login-title {
+
+.signup-title {
     text-align: center;
     font-size: 1.5rem;
-    /* Reduced from 1.8rem */
     margin-bottom: 1.5rem;
     color: #1f2937;
     font-weight: 600;
-    /* Added for better readability */
 }
-.login-box {
+
+.signup-box {
     background: white;
     padding: 2.5rem;
     border-radius: 3rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 350px;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* This centers vertically */
 }
 
-.login-form {
+.signup-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* This centers horizontally */
     gap: 1rem;
     width: 100%;
 }
 
-.input-container {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-bottom: 1rem;
+.signup-input {
     width: 70%;
-    /* 70% smaller width */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-group {
-    margin-bottom: 0.75rem;
-    width: 100%;
-}
-
-.login-input {
-    width: 100%;
     padding: 0.75rem;
     border: 1px solid #dbdbdb;
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
+    padding-right: 35px !important;
+    /* Match login input */
 }
 
-.login-button {
+.signup-button {
     width: 70%;
-    /* Match the 70% width of inputs */
     padding: 0.75rem;
     background-color: #0095f6;
     color: white;
@@ -76,9 +58,7 @@
     transition: background-color 0.3s ease;
 }
 
-/* Keep all other existing styles the same */
-/* Add these to your existing CSS */
-
+/* Optional: Style for toggle password if you implement it here */
 .password-input-container {
     position: relative;
 }
@@ -104,7 +84,19 @@
     outline: none;
 }
 
-/* Make sure your input has enough padding on the right for the icon */
-.login-input {
-    padding-right: 35px !important; /* Space for the eye icon */
+.login-link {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #6b7280;
+}
+
+.login-link-a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link-a:hover {
+    text-decoration: underline;
 }

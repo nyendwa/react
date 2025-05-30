@@ -1,13 +1,18 @@
-import LoginUser from "./assets/LoginUser"
+// App.jsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginUser from "./assets/LoginUser";
+import SignUp from "./assets/SignUp"; // import SignUp component
 import React from 'react';
 
 function App() {
   return (
-    <div>
-      <LoginUser />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginUser />} />
+        <Route path="/register" element={<SignUp />} />
+      </Routes>
+    </Router>
   );
 }
 
-
-export default App
+export default App;
